@@ -837,7 +837,6 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      */}
                     </div>
 
                     {formData.paymentMethod === 'credit' && (
@@ -950,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
