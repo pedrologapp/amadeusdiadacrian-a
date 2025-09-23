@@ -848,7 +848,7 @@ function App() {
                           className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm mt-2"
                         >
                           <option value={1}>1x de R$ {(valorTotal / 1).toFixed(2).replace('.', ',')}</option>          
-                          <option value={1}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
+                          <option value={2}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
                         </select>
                       </div>
                     )}
@@ -949,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
