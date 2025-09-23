@@ -805,12 +805,12 @@ function App() {
                           <div className="flex items-center space-x-2">
                             <span className="text-lg font-bold">PIX</span>
                             <span className="text-sm">
-                              R$ {(20).toFixed(2).replace('.', ',')} (sem taxas)
+                              R$ {(90).toFixed(2).replace('.', ',')} (sem taxas)
                             </span>
                           </div>
                         </div>
                       </div>
-                      {/*
+
                       <div 
                         className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
                           formData.paymentMethod === 'credit' 
@@ -950,6 +950,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
