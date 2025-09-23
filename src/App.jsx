@@ -29,9 +29,9 @@ import {
   UserPlus
 } from 'lucide-react';
 // Importando as imagens
-import interiorImage1 from './assets/desfie1.jpg';
-import interiorImage2 from './assets/desfile2.jpg';
-import jardimImage from './assets/desfile3.jpg';
+import interiorImage1 from './assets/happy1.jpg';
+import interiorImage2 from './assets/happy2.jpg';
+import jardimImage from './assets/happy3.jpg';
 
 function App() {
   // Estados para o formulário
@@ -98,7 +98,7 @@ function App() {
 
   // Cálculo de preço atualizado
   const calculatePrice = () => {
-    const PRECO_BASE = 20.0;
+    const PRECO_BASE = 90.0;
     
     let valorTotal = PRECO_BASE;
     
@@ -206,7 +206,7 @@ function App() {
           installments: formData.installments,
           amount: valorTotal,
           timestamp: new Date().toISOString(),
-          event: 'Amadeus-Desfile7setembro'
+          event: 'Amadeus-diadascriancas'
         })
       });
 
@@ -293,10 +293,10 @@ function App() {
       <section className="hero-section min-h-screen flex items-center justify-center text-white relative">
         <div className="text-center z-10 max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Desfile de 7 de Setembro
+            Dia das Crianças
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            É com grande alegria que convidamos toda a nossa comunidade escolar a participar do tradicional Desfile Cívico em comemoração à independência do Brasil.
+            Em comemoração ao Dia da Criança, realizaremos um passeio especial para o Happy Day!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -311,11 +311,11 @@ function App() {
           <div className="mt-12 flex justify-center items-center space-x-8 text-sm">
             <div className="flex items-center">
               <Calendar className="h-5 w-5 mr-2" />
-              14 de Setembro de 2025 - a partir das 13h
+              16 de Outubro de 2025 - das 13h às 17h
             </div>
             <div className="flex items-center">
               <MapPin className="h-5 w-5 mr-2" />
-              Percurso: Rua Arari até Av. Maranhão - São Gonçalo do Amarante - RN
+              Buffet Infantíl Happy Day
             </div>
           </div>
         </div>
@@ -325,13 +325,35 @@ function App() {
       <section id="sobre" className="section-padding bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 gradient-text">Tema do Desfile</h2>
+            <h2 className="text-4xl font-bold mb-4 gradient-text">Sobre o Evento</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              <strong>"CONECTAMOS HOJE, ESCREVEREMOS O AMANHÃ"</strong>
+             O Happy Day é o buffet infantil mais completo de Natal, com um parque de diversões interno repleto de brinquedos incríveis e uma deliciosa variedade gastronômica para as crianças.
             </p>
           </div>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-2 gap-4 max-w-2xl">
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Uma Experiência Única</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <p>Espaço reservado exclusivamente para a escola</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <p>Diversão garantida com jogos e atividades</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <p>Segurança reforçada com local fechado à escola </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <p>Experiência de lazer e integração</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
               <img src={interiorImage1} alt="Interior do Instituto" className="rounded-lg shadow-lg h-48 w-full object-cover" />
               <img src={interiorImage2} alt="Coleções do Instituto" className="rounded-lg shadow-lg h-48 w-full object-cover" />
               <img src={jardimImage} alt="Jardins do Instituto" className="rounded-lg shadow-lg col-span-2 h-64 w-full object-cover" />
@@ -340,13 +362,14 @@ function App() {
         </div>
       </section>
       
+      
       {/* Itinerário */}
       <section id="itinerario" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Programação do Evento</h2>
             <p className="text-lg text-muted-foreground">
-              Confira o cronograma do nosso desfile
+              Confira o cronograma do nosso passeio
             </p>
           </div>
 
@@ -361,7 +384,7 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-center">
-                  Horário de concentração, no Centro Educacional Amadeus
+                  Saída do Amadeus às 13h, com retorno previsto para às 17h.
                 </p>
               </CardContent>
             </Card>
@@ -370,12 +393,12 @@ function App() {
                 <div className="mx-auto mb-4 p-3 bg-accent/10 rounded-full w-fit">
                   <MapPin className="h-8 w-8 text-accent" />
                 </div>
-                <CardTitle>Percurso</CardTitle>
+                <CardTitle>Local</CardTitle>
                 {/*   <CardDescription>Atividades e diversão</CardDescription>  */}
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-center">
-                  Rua Arari - Rua Cururupu - Rua Carolina - Avenida Maranhão (Encerramento com o Hino Nacional)
+                  Buffet Infantíl Happy Day - R. Isaac Pímentel, 2010 - Lagoa Nova, Natal - RN
                 </p>
               </CardContent>
             </Card>
@@ -395,10 +418,7 @@ function App() {
       <section id="documentacao" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Trajes e Bonificação</h2>
-            <p className="text-lg text-muted-foreground">
-              Confira as opções de trajes e suas respectivas bonificações
-            </p>
+            <h2 className="text-4xl font-bold mb-4">Observações importantes</h2>
           </div>
 
           <div className="mt-8 p-6 bg-accent/10 rounded-lg border border-accent/20">
@@ -408,7 +428,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    <strong>Fantasia à escolha (de acordo com o tema da sala):</strong> Bonificação de <strong>1,0 ponto</strong> em todas as disciplinas. Ala no desfile: Alunos de fantasia.
+                    Neste dia não haverá aula na escola, apenas o passeio.  
                   </p>
                 </div>
               </div>
@@ -417,7 +437,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    <strong>Fardamento completo:</strong> Bonificação de <strong>2,0 pontos</strong>, a ser distribuída em uma ou duas disciplinas. Ala no desfile: Alunos de Farda.
+                   O lanche está incluído, contendo churros, pizzas, salgadinhos, além de suco ou refrigerante.
                   </p>
                 </div>
               </div>
@@ -426,7 +446,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    <strong>Esporte: terno ou fantasia: </strong> Bonificação de <strong>1,0 ponto</strong> em todas as disciplinas. O aluno irá de terno ou de fantasia do esporte (Ballet, Karatê, Futsal ou Handbol).
+                  O transporte também está incluso no pacote.  
                   </p>
                 </div>
               </div>
@@ -435,19 +455,18 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    <strong>Lembrando:</strong> A fantasia será usada novamente na culminancia do projeto em novembro.
+                    O não comparecimento do aluno no dia do evento não acarretará em reembolso do valor pago. 
                   </p>
                 </div>
               </div>
-              
-               <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    <strong>Recomendação:</strong> prefiram tecidos com brilho (lamê brocado, tule) e espuma de 3 mm para garantir leveza e destaque. Verificar sugestôes com os professores.
+                    O aluno deverá ir com a farda da escola.
                   </p>
                 </div>
-              </div>
+              </div>    
           
             </div>
           </div>
@@ -467,7 +486,7 @@ function App() {
 
           <Card className="mb-8">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-primary">R$ 20,00</CardTitle>
+              <CardTitle className="text-3xl text-primary">R$ 90,00</CardTitle>
               <CardDescription>por aluno</CardDescription>
               {/* 
               <div className="mt-4 p-3 bg-blue-50 rounded-lg">
@@ -485,23 +504,11 @@ function App() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Bandas convidadas;
+                      Lanche: churros, pizzas, salgadinhos, além de suco ou refrigerante;
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Banners;
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Carro de som;
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Insfraestrutura de apoio;
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Decoração do desfile.
+                      Transporte incluso.
                     </li>
                   </ul>
                 </div>
@@ -510,15 +517,11 @@ function App() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      Pagamento obrigatório até 10 de setembro de 2025;
+                      Pagamento obrigatório até 14 de Outubro de 2025;
                     </li>
                     <li className="flex items-start">
                       <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      Cada aluno deve desfilar acompanhado de um responsável;
-                    </li>
-                    <li className="flex items-start">
-                      <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      Alimentação: não será permitido oferecer alimentos durante o percurso (a não ser que haja alguma emergência). Os alunos poderão levar apenas garrafas com água. 
+                      O aluno deverá vir com o fardamento da escola.
                     </li>
                   </ul>
                 </div>
@@ -606,12 +609,6 @@ function App() {
                             <option value="1º Ano">1º Ano</option>
                             <option value="2º Ano">2º Ano</option>
                             <option value="3º Ano">3º Ano</option>
-                            <option value="4º Ano">4º Ano</option>
-                            <option value="5º Ano">5º Ano</option>
-                            <option value="6º Ano">6º Ano</option>
-                            <option value="7º Ano">7º Ano</option>
-                            <option value="8º Ano">8º Ano</option>
-                            <option value="9º Ano">9º Ano</option>
                           </select>
                         </div>
                         {/* 
@@ -851,7 +848,8 @@ function App() {
                           onChange={(e) => setFormData(prev => ({ ...prev, installments: parseInt(e.target.value) }))}
                           className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm mt-2"
                         >
-                          <option value={1}>1x de R$ {(valorTotal / 1).toFixed(2).replace('.', ',')}</option>
+                          <option value={1}>1x de R$ {(valorTotal / 1).toFixed(2).replace('.', ',')}</option>          
+                          <option value={1}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
                         </select>
                       </div>
                     )}
@@ -952,6 +950,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
