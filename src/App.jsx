@@ -486,7 +486,7 @@ function App() {
 
           <Card className="mb-8">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-primary">R$ 90,00</CardTitle>
+              <CardTitle className="text-3xl text-primary">R$ 80,00</CardTitle>
               <CardDescription>por aluno</CardDescription>
               {/* 
               <div className="mt-4 p-3 bg-blue-50 rounded-lg">
@@ -949,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
