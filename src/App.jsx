@@ -446,7 +446,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                  O transporte está incluído no pacote.  
+                  O transporte está incluso no pacote.  
                   </p>
                 </div>
               </div>
@@ -949,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
