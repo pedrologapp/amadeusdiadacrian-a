@@ -480,7 +480,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Inscrição e Taxa</h2>
             <p className="text-lg text-muted-foreground">
-              Valor único por Aluno
+              Valor único por Aluno - À Vista ou em até 2x no cartão.
             </p>
           </div>
 
@@ -949,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
