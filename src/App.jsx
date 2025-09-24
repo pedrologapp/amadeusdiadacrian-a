@@ -517,7 +517,7 @@ function App() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      Pagamento obrigatório até 14 de Outubro de 2025;
+                      Pagamento obrigatório até 13 de Outubro de 2025;
                     </li>
                     <li className="flex items-start">
                       <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
@@ -949,6 +949,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
